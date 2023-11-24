@@ -8,6 +8,21 @@
     <title>Kolja portfolio</title>
 
     <style>
+        .center {
+            text-align: center;
+        }
+        .g1 {
+            gap: 1rem;
+        }
+        .gp {
+            gap: 0.5rem;
+        }
+        .g3 {
+            gap: 3rem;
+        }
+        .pd{
+            padding-top: 30px;
+        }
         .navbar-nav a {
             color: #E7E8D1;
             font-size: 100%;
@@ -24,23 +39,26 @@
             height: 200px;
             border-radius: 50%;
             overflow: hidden;
-            float: left;
-            margin-right: 20px; /* Adjust the margin as needed */
+            margin: 55px auto;
+            transition: transform 0.2s ease-in-out;
         }
-
         .profile-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
         }
+        .profile-img-container:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 5px 5px #b3584c;
+        }
     </style>
 </head>
 
-<body>
+<body style="background-color: #E7E8D1">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg" style="background-color: #B85042;">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #B85042;">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,11 +73,54 @@
             </div>
         </div>
     </nav>
-
-    <div class="profile-img-container">
-        <img src="ja.jpeg" class="profile-img" alt="Profile Image">
+    <div class="profile-img-container center">
+        <img src="ja.jpg" class="profile-img" alt="Profile Image">
     </div>
-
+    <div>
+        <p class="font-weight-bold center" style="color: #B85042;">
+            Moje ime je Kolja Vasiljević, imam 18 godina, dolazim iz Kragujevca, volim matematiku, pisanje i crtanje, a jedan od omiljenih hobija mi je bavljenje marketingom i glasovna gluma.
+        </p>
+    </div>
+    <div class="py-1" style="background-color: #B85042;"></div>
+    <div class="py-5" style="background-color: #A7BEAE;">
+        <div class="container">
+            <h2 class="font-weight-bold center" style="color: #B85042;"><b>Interesovanja</b></h2>
+            <div class="row pd">
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card">
+                    <img src="kesa.jpg" class="card-img-top" width="700" height="350">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: #B85042;">Crtanje</h5>
+                      <p class="card-text" style="color: #B85042;">"Nacrtajte realističan portret sebe" 8. razred :)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" >
+                  <div class="card">
+                    <img src="mik.jpg" class="card-img-top" width="700" height="350">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #B85042;">Glasovna gluma</h5>
+                        <p class="card-text" style="color: #B85042;">O ovome ćemo više u nastavku hehe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" >
+                <div class="card">
+                  <img src="hn.jpg" class="card-img-top" width="700" height="350">
+                  <div class="card-body">
+                      <h5 class="card-title" style="color: #B85042;">Marketing</h5>
+                      <p class="card-text" style="color: #B85042;">2 godine sa 8 uspešnih projekata</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="py-1" style="background-color: #B85042;"></div>
+    <div class="py-5" style="background-color: #A7BEAE;">
+        <div class="container">
+            <h2 class="font-weight-bold center" style="color: #B85042;"><b>Postignuća</b></h2>
+        </div>
+    </div>
 </body>
-
 </html>
