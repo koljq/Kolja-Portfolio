@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kolja portfolio</title>
 
+    <script>
+      const animeList = [
+          {'title': 'Jujutsu Kaisen', 'genres': ['shonen', 'action', 'supernatural'], 'episodes': 24, 'voice_actors': ['Yuji Itadori', 'Megumi Fushiguro', 'Nobara Kugisaki']},
+          {'title': 'Attack on Titan', 'genres': ['shonen', 'action', 'drama'], 'episodes': 75, 'voice_actors': ['Eren Yeager', 'Mikasa Ackerman', 'Armin Arlert']},
+          {'title': 'My Hero Academia', 'genres': ['shonen', 'action', 'superhero'], 'episodes': 104, 'voice_actors': ['Izuku Midoriya', 'Katsuki Bakugo', 'All Might']},
+          {'title': 'Demon Slayer', 'genres': ['shonen', 'action', 'historical'], 'episodes': 26, 'voice_actors': ['Tanjiro Kamado', 'Nezuko Kamado', 'Zenitsu Agatsuma']}
+      ];
+      function displayAnime(index) {
+          console.log(animeList[index]);
+      }
+  </script>
+
     <style>
         .fa {
         font-size: 30px;
@@ -151,6 +163,17 @@
                     <a class="nav-link text-center font-weight-bold" href="#div_id3">Postignuća</a>
                     <a class="nav-link text-center font-weight-bold" href="#div_id4">Aspiracije</a>
                     <a class="nav-link text-center font-weight-bold" href="#div_id5">Kontakt</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #E7E8D1;">
+                          Anime
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #B85042;">
+                          <li><a target="_blank" class="dropdown-item" href="https://myanimelist.net/anime/40748/Jujutsu_Kaisen" onclick="displayAnime(0)">Jujutsu Kaisen</a></li>
+                          <li><a target="_blank" class="dropdown-item" href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin" onclick="displayAnime(1)">Attack on Titan</a></li>
+                          <li><a target="_blank" class="dropdown-item" href="https://myanimelist.net/anime/31964/Boku_no_Hero_Academia?suggestion=" onclick="displayAnime(2)">My Hero Academia</a></li>
+                          <li><a target="_blank" class="dropdown-item" href="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba" onclick="displayAnime(3)">Demon slayer</a></li>
+                      </ul>
+                  </li>
                 </div>
             </div>
         </div>
